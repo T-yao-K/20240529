@@ -46,6 +46,7 @@ document.remove = function (id) {
   if (id === next) {
     document.getElementById("main").removeChild(document.getElementById(id));
     next = next + 1;
+    if (next == 10) next = 1;
   }
 };
 
