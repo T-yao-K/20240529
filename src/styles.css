@@ -1,0 +1,9 @@
+body {
+  overflow: hidden;
+}
+
+/*キャンバスの背景を変えてみよう*/
+/*以下の行を追加することにより実装*/
+#draw-area {
+  background-color: lightblue;
+}
