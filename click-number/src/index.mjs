@@ -10,6 +10,11 @@ function getRandomColor() {
   return color;
 }
 
+var next = 1;
+function reset_next() {
+  next = 1;
+}
+
 // ボタンを作る関数
 function createButtons() {
   const mainDiv = document.getElementById("main");
@@ -39,9 +44,9 @@ function createButtons() {
     elm.style.fontSize = size / 2 + "px"; // フォントをボタンのサイズに応じて変更
     elm.style.lineHeight = size + "px"; // ボタンを真ん中に配置
   }
+  reset_next();
 }
 
-var next = 1;
 document.remove = function (id) {
   if (id === next) {
     document.getElementById("main").removeChild(document.getElementById(id));
